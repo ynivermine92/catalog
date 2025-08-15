@@ -456,8 +456,7 @@ header {
     position: absolute;
     left: 100px;
     top: 10px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 18px;
     color: #fff;
     -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
