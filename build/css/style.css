@@ -413,7 +413,7 @@ header {
 
   .menu__item .menu__submenu li a,
   .menu__item .submenu li a {
-    padding-left: 60px;
+    padding-left: 40px;
   }
 
   .menu .menu__submenu {
@@ -441,6 +441,37 @@ header {
   .menu .menu__submenu li a:hover,
   .menu .submenu li a:hover {
     background-color: transparent;
+  }
+
+  .menu__item {
+    max-width: 150px;
+  }
+
+  .menu__item-submenu {
+    position: relative;
+  }
+
+  .menu__item-submenu::after {
+    content: ">";
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+
+  .menu__item-submenu:hover::after {
+    -webkit-transform: rotate(272deg);
+        -ms-transform: rotate(272deg);
+            transform: rotate(272deg);
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 }
 
